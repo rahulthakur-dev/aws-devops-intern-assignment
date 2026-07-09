@@ -1,8 +1,6 @@
 ### AWS DevOps Intern Assignment — EC2 + Nginx Website Deployment
 
-A static website deployed on an Ubuntu EC2 instance behind Nginx, provisioned and configured end to end: instance launch, Security Group rules, Linux server administration, website deployment, and two bonus tasks (Elastic IP, Docker).
-
-Live site: http://15.252.44.139
+A static website deployed on an Ubuntu EC2 instance behind Nginx, provisioned and configured end to end: instance launch, Security Group rules, Linux server administration, website deployment, and two bonus tasks (Elastic IP, Docker). The instance has since been terminated; screenshots below are the evidence of the working deployment.
 
 #### Summary
 
