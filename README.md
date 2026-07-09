@@ -52,6 +52,7 @@ ss -tulpn
 curl ifconfig.me
 df -h
 free -h
+ps aux
 ```
 
 ![Nginx systemctl status showing active running](nginx-status.png)

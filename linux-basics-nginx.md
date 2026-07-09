@@ -48,6 +48,16 @@ Check memory and swap usage.
 free -h
 ```
 
+List running processes with CPU and memory usage.
+```
+ps aux
+```
+
+Live view of running processes, refreshed continuously.
+```
+top
+```
+
 #### Nginx Configuration Layout
 
 Inspect the active site config.

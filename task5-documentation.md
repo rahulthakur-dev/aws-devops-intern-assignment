@@ -84,6 +84,11 @@ df -h
 free -h
 ```
 
+Check running processes.
+```
+ps aux
+```
+
 Inspect the Nginx site config and document root.
 ```
 cat /etc/nginx/sites-available/default
