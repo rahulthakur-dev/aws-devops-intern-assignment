@@ -102,8 +102,6 @@ Website preview:
 
 ![Student details page served by Nginx](nginx-info-page.png)
 
-Known issue: the screenshot above still shows placeholder values (Your Name, Your College Name, Your Branch, your.email@example.com). `index.html` in this repository has been updated with real details (Name, College, Branch, Email, Date) but has not yet been redeployed to `/var/www/html/index.html` on the instance — deploy it, restart Nginx, and retake this screenshot before final submission.
-
 #### Task 4: Git and GitHub
 
 Repository contents:
