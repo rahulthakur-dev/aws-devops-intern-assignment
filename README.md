@@ -102,7 +102,7 @@ Website preview:
 
 ![Student details page served by Nginx](nginx-info-page.png)
 
-Known issue: the page above still shows placeholder values (Your Name, Your College Name, Your Branch, your.email@example.com). Before final submission, replace these with actual details in `/var/www/html/index.html`, restart Nginx, and retake this screenshot.
+Known issue: the screenshot above still shows placeholder values (Your Name, Your College Name, Your Branch, your.email@example.com). `index.html` in this repository has been updated with real details (Name, College, Branch, Email, Date) but has not yet been redeployed to `/var/www/html/index.html` on the instance — deploy it, restart Nginx, and retake this screenshot before final submission.
 
 #### Task 4: Git and GitHub
 
@@ -120,6 +120,7 @@ disk-memory-usage.png      — Task 2 evidence: df -h and free -h output
 elastic-ip.png             — bonus evidence: Elastic IP allocated and associated
 ec2-with-elasticip.png     — bonus evidence: instance summary with Elastic IP
 docker-status.png          — bonus evidence: Docker service active and running
+docker-hello-world.png     — bonus evidence: docker run hello-world output
 ```
 
 #### Bonus: Elastic IP (+10)
@@ -146,10 +147,12 @@ sudo systemctl status docker.service
 
 ![Docker service active and running](docker-status.png)
 
-Run the hello-world test container to confirm the install (deliverable: capture this output too).
+Run the hello-world test container to confirm the install.
 ```
 sudo docker run hello-world
 ```
+
+![docker run hello-world output](docker-hello-world.png)
 
 #### Further Reference
 
