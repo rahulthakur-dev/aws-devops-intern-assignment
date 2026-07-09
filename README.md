@@ -20,12 +20,23 @@ Public DNS       : ec2-15-252-44-139.ap-south-1.compute.amazonaws.com
 
 Security Group inbound rules: TCP 22 (SSH) and TCP 80 (HTTP) open from `0.0.0.0/0`.
 
-Connect to the instance over SSH.
+Restrict the key file permissions so SSH accepts it (required, otherwise SSH refuses the key with an UNPROTECTED PRIVATE KEY FILE error).
 ```
-ssh -i your-key.pem ubuntu@15.252.44.139
+chmod 400 key.pem
 ```
 
-Screenshots (to add): EC2 Dashboard, SSH login terminal.
+Connect to the instance over SSH.
+```
+ssh -i key.pem ubuntu@15.252.44.139
+```
+
+EC2 instance dashboard:
+
+![EC2 instance summary](ec2-dashboard.png)
+
+SSH login:
+
+![SSH login to the EC2 instance](ssh-login-terminal.png)
 
 #### Task 2: Linux Basics and Nginx Installation
 
@@ -102,6 +113,8 @@ README.md                  — this file
 linux-basics-nginx.md      — full command reference and troubleshooting notes for Tasks 2-3
 docker-installation.md     — Docker Engine apt-repository install reference
 nginx-info-page.png        — Task 3 website screenshot
+ec2-dashboard.png          — Task 1 evidence: EC2 instance summary
+ssh-login-terminal.png     — Task 1 evidence: SSH login
 nginx-status.png           — Task 2 evidence: Nginx active and running
 disk-memory-usage.png      — Task 2 evidence: df -h and free -h output
 elastic-ip.png             — bonus evidence: Elastic IP allocated and associated

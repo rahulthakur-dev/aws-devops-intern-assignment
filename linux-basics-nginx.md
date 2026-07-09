@@ -1,5 +1,12 @@
 ### EC2 Linux Basics and Nginx Setup
 
+#### SSH Key Setup
+
+Restrict the private key to owner-read-only before first use.
+```
+chmod 400 key.pem
+```
+
 #### Nginx Service Management
 
 Check whether Nginx is installed and running.
@@ -73,6 +80,13 @@ curl http://localhost
 ```
 
 #### Troubleshooting
+
+##### SSH refuses the key: `UNPROTECTED PRIVATE KEY FILE`
+
+Cause: the `.pem` key file has group/world-readable permissions. AWS/OpenSSH reject keys that aren't owner-read-only.
+```
+chmod 400 key.pem
+```
 
 ##### SSH session drops mid-edit: `client_loop: send disconnect: Broken pipe`
 
